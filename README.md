@@ -62,7 +62,6 @@ Os acessos registram tentativas com RFID
 
 Observações
 O sistema foi desenvolvido de forma simples para apresentação
-Não possui autenticação avançada
 O foco é demonstrar a integração entre hardware software e banco de dados
 Todos os componentes devem estar funcionando em conjunto para a demonstração
 
