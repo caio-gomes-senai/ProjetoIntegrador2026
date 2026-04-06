@@ -1,0 +1,624 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.senai:backend >--------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ backend ---
+[INFO] Deleting C:\Users\caio_t_gomes\Downloads\backend (1)\backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 18 source files with javac [debug release 11] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[5,52] cannot access org.springframework.beans.factory.annotation.Autowired
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar(/org/springframework/beans/factory/annotation/Autowired.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[6,32] cannot access org.springframework.http.ResponseEntity
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/http/ResponseEntity.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[11,2] cannot access org.springframework.web.bind.annotation.RestController
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/RestController.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[12,2] cannot access org.springframework.web.bind.annotation.RequestMapping
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/RequestMapping.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[13,2] cannot access org.springframework.web.bind.annotation.CrossOrigin
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/CrossOrigin.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[6,38] cannot access org.springframework.stereotype.Service
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar(/org/springframework/stereotype/Service.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[4,47] cannot access org.springframework.data.jpa.repository.JpaRepository
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\data\spring-data-jpa\3.2.4\spring-data-jpa-3.2.4.jar(/org/springframework/data/jpa/repository/JpaRepository.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[5,38] cannot access org.springframework.stereotype.Repository
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar(/org/springframework/stereotype/Repository.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[9,32] cannot access org.springframework.http.HttpStatus
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/http/HttpStatus.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/BackendApplication.java:[3,32] cannot access org.springframework.boot.SpringApplication
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar(/org/springframework/boot/SpringApplication.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/BackendApplication.java:[4,46] cannot access org.springframework.boot.autoconfigure.SpringBootApplication
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar(/org/springframework/boot/autoconfigure/SpringBootApplication.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[22,6] cannot access org.springframework.web.bind.annotation.GetMapping
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/GetMapping.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[29,45] cannot access org.springframework.web.bind.annotation.PathVariable
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/PathVariable.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[36,51] cannot access org.springframework.web.bind.annotation.RequestBody
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/RequestBody.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[35,6] cannot access org.springframework.web.bind.annotation.PostMapping
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/PostMapping.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[41,6] cannot access org.springframework.web.bind.annotation.PutMapping
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/PutMapping.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[47,6] cannot access org.springframework.web.bind.annotation.DeleteMapping
+  bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/DeleteMapping.class)
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[10,2] cannot find symbol
+  symbol: class Service
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[10,2] cannot find symbol
+  symbol: class Service
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[23,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[36,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[9,44] cannot find symbol
+  symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[8,2] cannot find symbol
+  symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/ProdutoRepository.java:[9,44] cannot find symbol
+  symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/ProdutoRepository.java:[8,2] cannot find symbol
+  symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/SensorTemperaturaRepository.java:[9,54] cannot find symbol
+  symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/SensorTemperaturaRepository.java:[8,2] cannot find symbol
+  symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/HistoricoTemperaturaRepository.java:[8,57] cannot find symbol
+  symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/HistoricoTemperaturaRepository.java:[7,2] cannot find symbol
+  symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[15,2] cannot find symbol
+  symbol: class RestController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[16,2] cannot find symbol
+  symbol: class RequestMapping
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[17,2] cannot find symbol
+  symbol: class CrossOrigin
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[24,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[29,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[36,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[42,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[48,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/BackendApplication.java:[6,2] cannot find symbol
+  symbol: class SpringBootApplication
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/UsuarioRepository.java:[9,44] cannot find symbol
+  symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/UsuarioRepository.java:[8,2] cannot find symbol
+  symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[13,2] cannot find symbol
+  symbol: class RestController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[14,2] cannot find symbol
+  symbol: class RequestMapping
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[15,2] cannot find symbol
+  symbol: class CrossOrigin
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[22,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[27,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[34,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[40,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[46,12] cannot find symbol
+  symbol:   class ResponseEntity
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[12,1] <any> is not a repeatable annotation type
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[13,1] <any> is not a repeatable annotation type
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[16,6] cannot find symbol
+  symbol:   class Autowired
+  location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[19,6] cannot find symbol
+  symbol:   class Autowired
+  location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[35,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[13,6] cannot find symbol
+  symbol:   class Autowired
+  location: class com.senai.backend.service.FreezerService
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[13,6] cannot find symbol
+  symbol:   class Autowired
+  location: class com.senai.backend.service.ProdutoService
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[20,6] cannot find symbol
+  symbol:   class Autowired
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[23,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[28,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[42,44] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[42,74] cannot find symbol
+  symbol:   class RequestBody
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[48,41] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[18,6] cannot find symbol
+  symbol:   class Autowired
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[21,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[27,45] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[26,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[34,51] cannot find symbol
+  symbol:   class RequestBody
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[33,6] cannot find symbol
+  symbol:   class PostMapping
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[40,44] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[40,74] cannot find symbol
+  symbol:   class RequestBody
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[39,6] cannot find symbol
+  symbol:   class PutMapping
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[46,41] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[45,6] cannot find symbol
+  symbol:   class DeleteMapping
+  location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[32,16] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[43,16] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[17,33] cannot find symbol
+  symbol:   method findAll()
+  location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[21,33] cannot find symbol
+  symbol:   method findById(java.lang.Long)
+  location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[25,33] cannot find symbol
+  symbol:   method save(com.senai.backend.model.Produto)
+  location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[29,63] cannot find symbol
+  symbol:   method findById(java.lang.Long)
+  location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[33,46] cannot find symbol
+  symbol:   method getNome()
+  location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[34,54] cannot find symbol
+  symbol:   method getDataValidade()
+  location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[35,52] cannot find symbol
+  symbol:   method getTempMinima()
+  location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[36,52] cannot find symbol
+  symbol:   method getTempMaxima()
+  location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[37,37] cannot find symbol
+  symbol:   method save(com.senai.backend.model.Produto)
+  location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[43,26] cannot find symbol
+  symbol:   method deleteById(java.lang.Long)
+  location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[17,33] cannot find symbol
+  symbol:   method findAll()
+  location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[21,33] cannot find symbol
+  symbol:   method findById(java.lang.Long)
+  location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[25,33] cannot find symbol
+  symbol:   method save(com.senai.backend.model.Freezer)
+  location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[29,63] cannot find symbol
+  symbol:   method findById(java.lang.Long)
+  location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[33,46] cannot find symbol
+  symbol:   method getNome()
+  location: variable freezerAtualizado of type com.senai.backend.model.Freezer
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[34,49] cannot find symbol
+  symbol:   method getUsuario()
+  location: variable freezerAtualizado of type com.senai.backend.model.Freezer
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[35,37] cannot find symbol
+  symbol:   method save(com.senai.backend.model.Freezer)
+  location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[41,26] cannot find symbol
+  symbol:   method deleteById(java.lang.Long)
+  location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[25,16] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[31,28] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[32,39] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[38,38] cannot find symbol
+  symbol:   variable HttpStatus
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[38,16] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[44,34] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[44,63] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[50,16] cannot find symbol
+  symbol:   variable ResponseEntity
+  location: class com.senai.backend.controller.ProdutoController
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.353 s
+[INFO] Finished at: 2026-04-06T19:30:50-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[5,52] cannot access org.springframework.beans.factory.annotation.Autowired
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar(/org/springframework/beans/factory/annotation/Autowired.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[6,32] cannot access org.springframework.http.ResponseEntity
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/http/ResponseEntity.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[11,2] cannot access org.springframework.web.bind.annotation.RestController
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/RestController.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[12,2] cannot access org.springframework.web.bind.annotation.RequestMapping
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/RequestMapping.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[13,2] cannot access org.springframework.web.bind.annotation.CrossOrigin
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/CrossOrigin.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[6,38] cannot access org.springframework.stereotype.Service
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar(/org/springframework/stereotype/Service.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[4,47] cannot access org.springframework.data.jpa.repository.JpaRepository
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\data\spring-data-jpa\3.2.4\spring-data-jpa-3.2.4.jar(/org/springframework/data/jpa/repository/JpaRepository.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[5,38] cannot access org.springframework.stereotype.Repository
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar(/org/springframework/stereotype/Repository.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[9,32] cannot access org.springframework.http.HttpStatus
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/http/HttpStatus.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/BackendApplication.java:[3,32] cannot access org.springframework.boot.SpringApplication
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar(/org/springframework/boot/SpringApplication.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/BackendApplication.java:[4,46] cannot access org.springframework.boot.autoconfigure.SpringBootApplication
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar(/org/springframework/boot/autoconfigure/SpringBootApplication.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[22,6] cannot access org.springframework.web.bind.annotation.GetMapping
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/GetMapping.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[29,45] cannot access org.springframework.web.bind.annotation.PathVariable
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/PathVariable.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[36,51] cannot access org.springframework.web.bind.annotation.RequestBody
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/RequestBody.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[35,6] cannot access org.springframework.web.bind.annotation.PostMapping
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/PostMapping.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[41,6] cannot access org.springframework.web.bind.annotation.PutMapping
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/PutMapping.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[47,6] cannot access org.springframework.web.bind.annotation.DeleteMapping
+[ERROR]   bad class file: C:\Users\caio_t_gomes\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar(/org/springframework/web/bind/annotation/DeleteMapping.class)
+[ERROR]     class file has wrong version 61.0, should be 55.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[10,2] cannot find symbol
+[ERROR]   symbol: class Service
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[10,2] cannot find symbol
+[ERROR]   symbol: class Service
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[23,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[36,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[9,44] cannot find symbol
+[ERROR]   symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/FreezerRepository.java:[8,2] cannot find symbol
+[ERROR]   symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/ProdutoRepository.java:[9,44] cannot find symbol
+[ERROR]   symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/ProdutoRepository.java:[8,2] cannot find symbol
+[ERROR]   symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/SensorTemperaturaRepository.java:[9,54] cannot find symbol
+[ERROR]   symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/SensorTemperaturaRepository.java:[8,2] cannot find symbol
+[ERROR]   symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/HistoricoTemperaturaRepository.java:[8,57] cannot find symbol
+[ERROR]   symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/HistoricoTemperaturaRepository.java:[7,2] cannot find symbol
+[ERROR]   symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[15,2] cannot find symbol
+[ERROR]   symbol: class RestController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[16,2] cannot find symbol
+[ERROR]   symbol: class RequestMapping
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[17,2] cannot find symbol
+[ERROR]   symbol: class CrossOrigin
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[24,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[29,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[36,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[42,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[48,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/BackendApplication.java:[6,2] cannot find symbol
+[ERROR]   symbol: class SpringBootApplication
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/UsuarioRepository.java:[9,44] cannot find symbol
+[ERROR]   symbol: class JpaRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/repository/UsuarioRepository.java:[8,2] cannot find symbol
+[ERROR]   symbol: class Repository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[13,2] cannot find symbol
+[ERROR]   symbol: class RestController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[14,2] cannot find symbol
+[ERROR]   symbol: class RequestMapping
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[15,2] cannot find symbol
+[ERROR]   symbol: class CrossOrigin
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[22,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[27,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[34,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[40,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[46,12] cannot find symbol
+[ERROR]   symbol:   class ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[12,1] <any> is not a repeatable annotation type
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[13,1] <any> is not a repeatable annotation type
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[16,6] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[19,6] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[35,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[13,6] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.senai.backend.service.FreezerService
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[13,6] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.senai.backend.service.ProdutoService
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[20,6] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[23,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[28,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[42,44] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[42,74] cannot find symbol
+[ERROR]   symbol:   class RequestBody
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[48,41] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[18,6] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[21,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[27,45] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[26,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[34,51] cannot find symbol
+[ERROR]   symbol:   class RequestBody
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[33,6] cannot find symbol
+[ERROR]   symbol:   class PostMapping
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[40,44] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[40,74] cannot find symbol
+[ERROR]   symbol:   class RequestBody
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[39,6] cannot find symbol
+[ERROR]   symbol:   class PutMapping
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[46,41] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/FreezerController.java:[45,6] cannot find symbol
+[ERROR]   symbol:   class DeleteMapping
+[ERROR]   location: class com.senai.backend.controller.FreezerController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[32,16] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/DashboardController.java:[43,16] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.DashboardController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[17,33] cannot find symbol
+[ERROR]   symbol:   method findAll()
+[ERROR]   location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[21,33] cannot find symbol
+[ERROR]   symbol:   method findById(java.lang.Long)
+[ERROR]   location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[25,33] cannot find symbol
+[ERROR]   symbol:   method save(com.senai.backend.model.Produto)
+[ERROR]   location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[29,63] cannot find symbol
+[ERROR]   symbol:   method findById(java.lang.Long)
+[ERROR]   location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[33,46] cannot find symbol
+[ERROR]   symbol:   method getNome()
+[ERROR]   location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[34,54] cannot find symbol
+[ERROR]   symbol:   method getDataValidade()
+[ERROR]   location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[35,52] cannot find symbol
+[ERROR]   symbol:   method getTempMinima()
+[ERROR]   location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[36,52] cannot find symbol
+[ERROR]   symbol:   method getTempMaxima()
+[ERROR]   location: variable produtoAtualizado of type com.senai.backend.model.Produto
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[37,37] cannot find symbol
+[ERROR]   symbol:   method save(com.senai.backend.model.Produto)
+[ERROR]   location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/ProdutoService.java:[43,26] cannot find symbol
+[ERROR]   symbol:   method deleteById(java.lang.Long)
+[ERROR]   location: variable produtoRepository of type com.senai.backend.repository.ProdutoRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[17,33] cannot find symbol
+[ERROR]   symbol:   method findAll()
+[ERROR]   location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[21,33] cannot find symbol
+[ERROR]   symbol:   method findById(java.lang.Long)
+[ERROR]   location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[25,33] cannot find symbol
+[ERROR]   symbol:   method save(com.senai.backend.model.Freezer)
+[ERROR]   location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[29,63] cannot find symbol
+[ERROR]   symbol:   method findById(java.lang.Long)
+[ERROR]   location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[33,46] cannot find symbol
+[ERROR]   symbol:   method getNome()
+[ERROR]   location: variable freezerAtualizado of type com.senai.backend.model.Freezer
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[34,49] cannot find symbol
+[ERROR]   symbol:   method getUsuario()
+[ERROR]   location: variable freezerAtualizado of type com.senai.backend.model.Freezer
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[35,37] cannot find symbol
+[ERROR]   symbol:   method save(com.senai.backend.model.Freezer)
+[ERROR]   location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/service/FreezerService.java:[41,26] cannot find symbol
+[ERROR]   symbol:   method deleteById(java.lang.Long)
+[ERROR]   location: variable freezerRepository of type com.senai.backend.repository.FreezerRepository
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[25,16] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[31,28] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[32,39] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[38,38] cannot find symbol
+[ERROR]   symbol:   variable HttpStatus
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[38,16] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[44,34] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[44,63] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] /C:/Users/caio_t_gomes/Downloads/backend (1)/backend/src/main/java/com/senai/backend/controller/ProdutoController.java:[50,16] cannot find symbol
+[ERROR]   symbol:   variable ResponseEntity
+[ERROR]   location: class com.senai.backend.controller.ProdutoController
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

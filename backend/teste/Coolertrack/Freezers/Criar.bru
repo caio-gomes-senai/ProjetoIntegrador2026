@@ -1,0 +1,28 @@
+meta {
+  name: Criar
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/post-freezers
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Freezer do Laboratório",
+    "usuario": {
+      "id": 1
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

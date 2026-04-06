@@ -1,0 +1,28 @@
+meta {
+  name: Atualizar
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/api/post-produtos/1
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Vacina Gotinha Atualizada",
+    "dataValidade": "2026-01-01",
+    "tempMinima": -25.0,
+    "tempMaxima": -10.0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

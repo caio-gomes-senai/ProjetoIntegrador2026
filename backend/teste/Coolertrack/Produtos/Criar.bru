@@ -1,0 +1,28 @@
+meta {
+  name: Criar
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/post-produtos
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Vacina Gotinha",
+    "dataValidade": "2025-12-31",
+    "tempMinima": -20.5,
+    "tempMaxima": -5.0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

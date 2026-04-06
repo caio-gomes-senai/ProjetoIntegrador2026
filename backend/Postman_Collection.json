@@ -1,0 +1,122 @@
+{
+  "info": {
+    "name": "Backend IoT API - Coolertrack",
+    "description": "Collection atualizada com as novas tabelas (Freezer/Produto)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Dashboard",
+      "item": [
+        {
+          "name": "Dashboard Completo",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/dashboard"
+          }
+        },
+        {
+          "name": "Estatísticas",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/dashboard/stats"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Produtos",
+      "item": [
+        {
+          "name": "Listar",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/post-produtos"
+          }
+        },
+        {
+          "name": "Criar",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Vacina Gotinha\",\n  \"dataValidade\": \"2025-12-31\",\n  \"tempMinima\": -20.5,\n  \"tempMaxima\": -5.0\n}"
+            },
+            "url": "http://localhost:8080/api/post-produtos"
+          }
+        },
+        {
+          "name": "Atualizar",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Vacina Gotinha Atualizada\",\n  \"dataValidade\": \"2026-01-01\",\n  \"tempMinima\": -25.0,\n  \"tempMaxima\": -10.0\n}"
+            },
+            "url": "http://localhost:8080/api/post-produtos/1"
+          }
+        },
+        {
+          "name": "Deletar",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/api/post-produtos/1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Freezers",
+      "item": [
+        {
+          "name": "Listar",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/post-freezers"
+          }
+        },
+        {
+          "name": "Criar",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Freezer do Laboratório\",\n  \"usuario\": {\n    \"id\": 1\n  }\n}"
+            },
+            "url": "http://localhost:8080/api/post-freezers"
+          }
+        },
+        {
+          "name": "Atualizar",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Freezer da Recepção\",\n  \"usuario\": {\n    \"id\": 1\n  }\n}"
+            },
+            "url": "http://localhost:8080/api/post-freezers/1"
+          }
+        },
+        {
+          "name": "Deletar",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/api/post-freezers/1"
+          }
+        }
+      ]
+    }
+  ]
+}
