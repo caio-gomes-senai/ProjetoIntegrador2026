@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColdTrack - Cadastro de Produto</title>
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/produtocadastro.css}"/>
+</head>
+<body>
+    <nav>
+        <a class="logo" th:href="@{/home}"><img class="img-logo" th:src="@{/img/Logo ColdTrack (1).png}" alt="Logo"></a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a th:href="@{/home}">Início</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a th:href="@{/refrigerador}">Refrigerador</a></li>
+            <li><a th:href="@{/produtos}">Produtos</a></li>
+        </ul>
+    </nav>
+    
+    <div class="title-div">
+        <h6 class="title">Cadastre um Produto</h6>
+    </div> 
+    
+    <div class="form-div">
+        <form method="post" th:action="@{/produto/cadastro}" th:object="${produtoDto}">
+            <div th:if="${success}" style="color: lightgreen; margin-bottom: 20px; text-align: center; font-weight: bold; font-size: 1.1rem;" th:text="${success}"></div>
+            <div th:if="${error}" style="color: red; margin-bottom: 20px; text-align: center; font-weight: bold; font-size: 1.1rem;" th:text="${error}"></div>
+            
+            <p>Nome do produto</p>
+            <input type="text" th:field="*{nome}" required>
+            
+            <p>Data de Validade</p>
+            <input type="date" th:field="*{dataValidade}" required>
+            
+            <p>Temperatura Mínima</p>
+            <input type="number" step="0.1" th:field="*{tempMinima}" required>
+            
+            <p>Temperatura Máxima</p>
+            <input type="number" step="0.1" th:field="*{tempMaxima}" required>
+            
+            <p>Selecione o Refrigerador em que o produto será armazenado</p>
+            <select th:field="*{freezerId}" required>
+                <option value="" disabled selected>Escolha um Refrigerador</option>
+                <option th:each="freezer : ${listaFreezers}" 
+                        th:value="${freezer.id}" 
+                        th:text="${freezer.nome}">
+                </option>
+            </select>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
