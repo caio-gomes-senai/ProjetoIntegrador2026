@@ -1,6 +1,7 @@
 package com.senai.backend.controller;
 
 import com.senai.backend.dto.SensorTemperaturaDTO;
+import com.senai.backend.model.SensorTemperatura;
 import com.senai.backend.service.SensorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,12 +24,14 @@ public class WebSensorController {
         List<SensorTemperaturaDTO> dtos = sensorService.findAll().stream()
                 .map(sensor -> SensorTemperaturaDTO.builder()
                         .id(sensor.getId())
-                        .nome("Sensor " + sensor.getId()) // Display name
-                        .tipo("DHT11") // Placeholder
-                        .status("Ativo") // Placeholder
+                        .nome(sensor.getNome())
+                        .freezerNome(sensor.getFreezer() != null ? sensor.getFreezer().getNome() : "Sem Refrigerador")
+                        .status("Ativo") // Placeholder or logic if available
+                        .tipo("Temperatura") // Placeholder
                         .build())
                 .collect(Collectors.toList());
         model.addAttribute("listaSensores", dtos);
         return "sensorLista";
     }
 }
+

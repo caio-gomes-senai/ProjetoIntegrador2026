@@ -1,7 +1,7 @@
 package com.senai.backend.service;
 
-import com.senai.backend.model.Sensor;
-import com.senai.backend.repository.SensorRepository;
+import com.senai.backend.model.SensorTemperatura;
+import com.senai.backend.repository.SensorTemperaturaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -11,28 +11,27 @@ import java.util.Optional;
 public class SensorService {
 
     @Autowired
-    private SensorRepository sensorRepository;
+    private SensorTemperaturaRepository sensorRepository;
 
-    public List<Sensor> findAll() {
+    public List<SensorTemperatura> findAll() {
         return sensorRepository.findAll();
     }
 
-    public Optional<Sensor> findById(Long id) {
+    public Optional<SensorTemperatura> findById(Long id) {
         return sensorRepository.findById(id);
     }
 
-    public Sensor save(Sensor sensor) {
+    public SensorTemperatura save(SensorTemperatura sensor) {
         return sensorRepository.save(sensor);
     }
 
-    public Sensor update(Long id, Sensor sensorAtualizado) {
-        Optional<Sensor> sensorExistente = sensorRepository.findById(id);
+    public SensorTemperatura update(Long id, SensorTemperatura sensorAtualizado) {
+        Optional<SensorTemperatura> sensorExistente = sensorRepository.findById(id);
 
         if (sensorExistente.isPresent()) {
-            Sensor sensor = sensorExistente.get();
-            sensor.setTemperatura(sensorAtualizado.getTemperatura());
-            sensor.setUmidade(sensorAtualizado.getUmidade());
-            sensor.setDataHora(sensorAtualizado.getDataHora());
+            SensorTemperatura sensor = sensorExistente.get();
+            sensor.setNome(sensorAtualizado.getNome());
+            sensor.setFreezer(sensorAtualizado.getFreezer());
             return sensorRepository.save(sensor);
         }
         return null;
@@ -42,3 +41,4 @@ public class SensorService {
         sensorRepository.deleteById(id);
     }
 }
+

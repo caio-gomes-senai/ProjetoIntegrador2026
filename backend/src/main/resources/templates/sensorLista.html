@@ -20,7 +20,7 @@
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
-                    <th>Tipo</th>
+                    <th>Refrigerador</th>
                     <th>Status</th>
                     <th>Ações</th>
                 </tr>  
@@ -29,15 +29,18 @@
                 <tr th:each="sensor : ${listaSensores}">
                     <td th:text="${sensor.id}"></td>
                     <td th:text="${sensor.nome}"></td>
-                    <td th:text="${sensor.tipo}"></td>
+                    <td th:text="${sensor.freezerNome}"></td>
                     <td th:text="${sensor.status}"></td>
                     <td class="acoes">
                         <button class="btn-editar">Alterar</button>
-                        <button class="btn-excluir">Excluir</button>
+                        <button class="btn-excluir" th:data-sensor-id="${sensor.id}">Excluir</button>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <script th:src="@{/js/excluirsensor.js}"></script>
 </body>
 </html>
+
+
