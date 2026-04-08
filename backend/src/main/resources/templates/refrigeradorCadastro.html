@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Refrigerador - ColdTrack</title>
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/produtocadastro.css}"/>
+</head>
+<body>
+    <header th:replace="~{navbar :: header}"></header>
+
+    <div class="title-div">
+        <h6 class="title">Adicione seu refrigerador</h6>
+    </div> 
+    
+    <div class="form-div">
+        <form th:action="@{/refrigerador/cadastro}" th:object="${freezerDto}" method="post">
+            <p>Nome do Refrigerador</p>
+            <input type="text" th:field="*{nome}" required>
+            
+            <p>Selecione o sensor instalado no refrigerador</p>
+            <select th:field="*{sensorId}" required>
+                <option value="">Selecione um sensor</option>
+                <option th:each="sensor : ${listaSensores}" 
+                        th:value="${sensor.id}" 
+                        th:text="${sensor.nome}"></option>
+            </select>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Sensores - ColdTrack</title>
+    <link rel="stylesheet" th:href="@{/css/navbar.css}" />
+    <link rel="stylesheet" th:href="@{/css/produtolista.css}" />
+</head>
+<body>
+    <header th:replace="~{navbar :: header}"></header>
+
+    <div class="title-div">
+        <h6 class="title">Sensores</h6>
+        <button class="cadastrar-button">Cadastrar</button>
+    </div> 
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr th:each="sensor : ${listaSensores}">
+                    <td th:text="${sensor.id}"></td>
+                    <td th:text="${sensor.nome}"></td>
+                    <td th:text="${sensor.tipo}"></td>
+                    <td th:text="${sensor.status}"></td>
+                    <td class="acoes">
+                        <button class="btn-editar">Alterar</button>
+                        <button class="btn-excluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

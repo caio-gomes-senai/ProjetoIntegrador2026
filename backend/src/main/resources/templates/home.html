@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ColdTrack</title>
+    <link rel="stylesheet" th:href="@{/css/navbar.css}" />
+    <link rel="stylesheet" th:href="@{/css/home.css}" />
+</head>
+<body>
+    
+    <header th:replace="~{navbar :: header}"></header>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="frase1">
+                    <p class="p1">Mais</p>
+                    <p class="p2">controle</p>
+                </div>
+                <div class="frase2">
+                    <p class="p3">Menos</p>    
+                    <p class="p4">perdas</p>
+                </div>
+                <span class="frase3">Monitoramento inteligente de temperatura para alimentos em tempo real</span>
+                <button><a class="link-button" th:href="@{/cadastro}">Começar agora</a></button>
+            </div>
+            <div class="right">
+                <img th:src="@{/img/img home.png}" alt="Home Image">
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

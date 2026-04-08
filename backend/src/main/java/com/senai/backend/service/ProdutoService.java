@@ -36,8 +36,8 @@ public class ProdutoService {
         Produto produto = new Produto();
         produto.setNome(dto.getNome());
         produto.setDataValidade(dto.getDataValidade());
-        produto.setTempMinima(dto.getTempMinima());
-        produto.setTempMaxima(dto.getTempMaxima());
+        produto.setTempMinima(dto.getTemperaturaMinima());
+        produto.setTempMaxima(dto.getTemperaturaMaxima());
         
         Produto saved = produtoRepository.save(produto);
         

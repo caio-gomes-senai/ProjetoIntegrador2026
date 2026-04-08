@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/navbar.css}" />
+</head>
+<body>
+    <header th:fragment="header">
+        <nav>
+            <a class="logo" th:href="@{/home}">
+                <img class="img-logo" th:src="@{/img/Logo ColdTrack (1).png}" alt="Logo ColdTrack">
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a th:href="@{/home}">Início</a></li>
+                <li><a th:href="@{/dashboard}">Dashboard</a></li>
+                <li><a th:href="@{/sensor/lista}">Sensor</a></li>
+                <li><a th:href="@{/refrigerador}">Refrigerador</a></li>
+                <li><a th:href="@{/produto/lista}">Produtos</a></li>
+            </ul>
+        </nav>
+        <script th:src="@{/js/mobile-navbar.js}"></script>
+    </header>
+</body>
+</html>

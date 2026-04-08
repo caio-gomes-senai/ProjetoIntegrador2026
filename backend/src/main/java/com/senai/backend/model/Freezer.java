@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.List;
 
 @Entity
@@ -34,5 +35,6 @@ public class Freezer {
         joinColumns = @JoinColumn(name = "id_freezer"),
         inverseJoinColumns = @JoinColumn(name = "id_produto")
     )
+    @JsonIgnoreProperties("freezers")
     private List<Produto> produtos;
 }

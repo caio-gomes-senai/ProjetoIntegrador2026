@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ColdTrack - Cadastro</title>
+    <title>Cadastro - ColdTrack</title>
     <link rel="stylesheet" th:href="@{/css/cadastroLogin.css}">
 </head>
 <body>
     <div class="div-principal">
         <div class="img-div">
-            <img class="imagem-grande" th:src="@{/img/login.png}" alt="Login Imagem">
+            <img class="imagem-grande" th:src="@{/img/login.png}" alt="Side Image">
         </div>
 
-        <form method="post" th:action="@{/cadastro}" th:object="${usuarioDto}">
+        <form th:action="@{/cadastro}" th:object="${usuarioDto}" method="post">
             <div class="cadastro-div">
                 <img class="logo" th:src="@{/img/Logo ColdTrack.png}" alt="Logo">
-
-                <div th:if="${error}" style="color: red; margin-bottom: 15px;">
-                    <span th:text="${errorMessage}">Erro ao cadastrar</span>
+                
+                <div th:if="${error}" style="color: red; text-align: center; margin-bottom: 10px;">
+                    <p th:text="${errorMessage}" style="font-size: 14px; margin: 0; width: auto; height: auto; display: inline;"></p>
                 </div>
 
-                <input type="text" placeholder="Nome" required th:field="*{nome}">
-                <input type="email" placeholder="Email" required th:field="*{email}">
-                <input type="password" placeholder="Senha" required th:field="*{senha}"> 
+                <input type="text" placeholder="Nome" th:field="*{nome}" required>
+                <input type="email" placeholder="Email" th:field="*{email}" required>
+                <input type="password" placeholder="Senha" th:field="*{senha}" required> 
                 <button type="submit">Cadastrar</button>
-                
-                <a th:href="@{/login}" style="margin-top: 10px; display: block; text-align: center; color: white;">Já tenho uma conta</a>
             </div>
         </form>
     </div>

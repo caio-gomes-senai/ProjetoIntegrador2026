@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ColdTrack - Login</title>
+    <title>Login - ColdTrack</title>
     <link rel="stylesheet" th:href="@{/css/login.css}">
 </head>
 <body>
     <div class="div-principal">
         <div class="div-cadastro">
-            <p class="p1" >Seja Bem-vindo(a)</p>
-            <p class="p2" >Novo por aqui?</p>
-            <p class="p3" >Crie sua conta em poucos segundos!</p>
+            <p class="p1">Seja Bem-vindo(a)</p>
+            <p class="p2">Novo por aqui?</p>
+            <p class="p3">Crie sua conta em poucos segundos!</p>
             <a th:href="@{/cadastro}"><button class="button-cadastro">Cadastre-se</button></a>
         </div>
 
-        <form method="post" th:action="@{/login}" th:object="${loginDto}">
+        <form th:action="@{/login}" th:object="${loginDto}" method="post">
             <div class="div-secundaria">
-                <img class="logo" th:src="@{/img/Logo ColdTrack.png}" alt="Logo ColdTrack">
+                <img class="logo" th:src="@{/img/Logo ColdTrack.png}" alt="Logo">
 
-                <div th:if="${error}" style="color: red; margin-bottom: 15px;">
-                    Email ou senha incorretos.
+                <div th:if="${error}" style="color: red; text-align: center; margin-bottom: 10px;">
+                    Email ou senha inválidos.
                 </div>
 
-                <input type="email" th:field="*{email}" placeholder="Email" required >
-                <input type="password" th:field="*{senha}" placeholder="Senha" required>
+                <input type="email" placeholder="Email" th:field="*{email}" required>
+                <input type="password" placeholder="Senha" th:field="*{senha}" required>
                 
                 <button type="submit">Login</button>
             </div>

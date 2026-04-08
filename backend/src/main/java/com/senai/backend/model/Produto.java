@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -32,5 +33,6 @@ public class Produto {
     private Float tempMaxima;
 
     @ManyToMany(mappedBy = "produtos", fetch = FetchType.LAZY)
+    @JsonIgnoreProperties("produtos")
     private List<Freezer> freezers;
 }

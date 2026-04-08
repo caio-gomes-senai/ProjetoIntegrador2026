@@ -25,11 +25,11 @@ public class LoginController {
     @PostMapping("/login")
     public String processLogin(@ModelAttribute("loginDto") LoginDTO loginDto, Model model) {
         UsuarioDTO userOpt = loginService.login(loginDto);
-        
+
         if (userOpt != null) {
             return "redirect:/home";
         }
-        
+
         model.addAttribute("error", true);
         return "login";
     }

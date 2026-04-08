@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lista de Produtos - ColdTrack</title>
+    <link rel="stylesheet" th:href="@{/css/navbar.css}" />
+    <link rel="stylesheet" th:href="@{/css/produtolista.css}" />
+</head>
+<body>
+    <header th:replace="~{navbar :: header}"></header>
+
+    <div class="title-div">
+        <h6 class="title">Produtos</h6>
+        <a th:href="@{/produto/cadastro}">
+            <button class="cadastrar-button">Cadastrar</button>
+        </a>
+    </div> 
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Produto</th>
+                    <th>Validade</th>
+                    <th>Temp. Mín</th>
+                    <th>Temp. Máx</th>
+                    <th>Refrigerador</th>
+                    <th>Ações</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr th:each="produto : ${listaProdutos}">
+                    <td th:text="${produto.id}"></td>
+                    <td th:text="${produto.nome}"></td>
+                    <td th:text="${#temporals.format(produto.dataValidade, 'dd/MM/yyyy')}"></td>
+                    <td th:text="${produto.temperaturaMinima + '°C'}"></td>
+                    <td th:text="${produto.temperaturaMaxima + '°C'}"></td>
+                    <td th:text="${produto.freezerNome}"></td>
+                    <td class="acoes">
+                        <a th:href="@{/produto/atualizar/{id}(id=${produto.id})}">
+                            <button class="btn-editar">Alterar</button>
+                        </a>
+                        <button class="btn-excluir excluir" th:data-produto-id="${produto.id}">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script th:src="@{/js/excluirproduto.js}"></script>
+</body>
+</html>

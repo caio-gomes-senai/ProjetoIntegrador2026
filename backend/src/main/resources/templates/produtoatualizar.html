@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produto - ColdTrack</title>
+    <title>Atualizar Produto - ColdTrack</title>
     <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
     <link rel="stylesheet" th:href="@{/css/produtocadastro.css}"/>
 </head>
@@ -11,14 +11,12 @@
     <header th:replace="~{navbar :: header}"></header>
 
     <div class="title-div">
-        <h6 class="title">Cadastre um Produto</h6>
+        <h6 class="title">Atualização do produto</h6>
     </div> 
     
     <div class="form-div">
-        <div th:if="${success}" style="color: green; text-align: center; margin-bottom: 10px;" th:text="${success}"></div>
-        <div th:if="${error}" style="color: red; text-align: center; margin-bottom: 10px;" th:text="${error}"></div>
-
-        <form th:action="@{/produto/cadastro}" th:object="${produtoDto}" method="post">
+        <form th:action="@{/produto/atualizar/{id}(id=${produtoDto.id})}" th:object="${produtoDto}" method="post">
+            <input type="hidden" th:field="*{id}" />
             <p>Nome do produto</p>
             <input type="text" th:field="*{nome}" required>
             
@@ -39,7 +37,7 @@
                         th:text="${freezer.nome}"></option>
             </select>
             
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Atualizar</button>
         </form>
     </div>
 </body>

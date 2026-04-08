@@ -4,18 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProdutoDTO {
+public class FreezerDTO {
     private Long id;
     private String nome;
-    private LocalDate dataValidade;
-    private Float temperaturaMinima;
-    private Float temperaturaMaxima;
-    private Long freezerId;
-    private String freezerNome;
+    private Long sensorId;
+    private String sensorNome;
 }
