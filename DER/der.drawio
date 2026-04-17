@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="DER Completo">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Usuario -->
+        <mxCell id="usuario" value="Usuario&#xa;PK id&#xa;nome&#xa;email (UNIQUE)&#xa;senha&#xa;created_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Freezer -->
+        <mxCell id="freezer" value="Freezer&#xa;PK id&#xa;nome&#xa;localizacao&#xa;FK usuario_id&#xa;created_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="200" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- Produto -->
+        <mxCell id="produto" value="Produto&#xa;PK id&#xa;nome&#xa;validade&#xa;quantidade&#xa;FK freezer_id" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="20" width="200" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- Sensor -->
+        <mxCell id="sensor" value="SensorTemperatura&#xa;PK id&#xa;nome&#xa;tipo&#xa;FK freezer_id" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="220" width="200" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Histórico -->
+        <mxCell id="historico" value="HistoricoTemperatura&#xa;PK id&#xa;valor&#xa;data_hora&#xa;FK sensor_id" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="220" width="220" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- RELACIONAMENTOS -->
+
+        <!-- Usuario 1:N Freezer -->
+        <mxCell id="r1" value="1:N" style="endArrow=ERone;startArrow=ERmany;" edge="1" parent="1" source="usuario" target="freezer">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Freezer 1:N Produto -->
+        <mxCell id="r2" value="1:N" style="endArrow=ERone;startArrow=ERmany;" edge="1" parent="1" source="freezer" target="produto">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Freezer 1:N Sensor -->
+        <mxCell id="r3" value="1:N" style="endArrow=ERone;startArrow=ERmany;" edge="1" parent="1" source="freezer" target="sensor">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Sensor 1:N Histórico -->
+        <mxCell id="r4" value="1:N" style="endArrow=ERone;startArrow=ERmany;" edge="1" parent="1" source="sensor" target="historico">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
